@@ -52,7 +52,7 @@ if apiKey == "" {
 		return
 	}
 
-	// Handle API-level errors (for example: bad key, city not found)
+	// Handle API-level errors (if bad key, then city not found)
 	if resp.StatusCode != http.StatusOK || (data.Cod != 0 && data.Cod != 200) {
 		if data.Message != "" {
 			fmt.Printf("API error: %s (code %d)\n", data.Message, data.Cod)
