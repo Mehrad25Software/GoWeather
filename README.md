@@ -28,7 +28,7 @@ cd weather-condition
 go mod init weather-condition
 
 # Edit main.go and add your API key
-apiKey := "YOUR_API_KEY"
+apiKey := "YOUR_API_KEY" (From OpenWeather API)
 
 # Run the program
 go run main.go
